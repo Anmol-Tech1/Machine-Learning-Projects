@@ -49,8 +49,8 @@ def predict():
 		if result not in [0,1,2,3]:
 			return render_template('index.html',prediction_texts="There was some error!")
 		else:
-			account_sid = 'ACa8f4c6ffa152d4936c5d03ae753618c0'
-			auth_token = 'cd5a1dd38aa523ca890e7699574c56ff'
+			account_sid = 'ACa8f4c6fa152d4936c5d03ae753618c0'
+			auth_token = 'cd5a1dd38aa523c890e7699574c56ff'
 			client = Client(account_sid, auth_token)
 
 			message = client.messages \
